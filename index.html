@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>menuration.com</title>
+<style type="text/css">
+body{
+background-color:	#000000;
+}
+#pr{
+color:#15f4ee;
+font-size:40px;
+}
+#hi{
+color:#15f4ee;
+background-color:#000000;
+position:relative;
+text-align:center;
+top:40%;
+left:38%;
+right:50%;
+padding: 10px;
+display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  height:69px;
+  weidth:60px;
+  border-radius:25px;
+}
+.man{
+color:#15f4ee;
+font-size:36px;
+}
+</style>
+</head>
+<body>
+<p id="pr">Click here to find area of circle
+ .</p>
+
+<button onclick="my()" id="hi">click here</button>
+
+<p id="a" class="man"></p>
+
+<script>
+function my() {
+  
+var radius = prompt("Enter the radius of circle.");
+
+   
+
+var r=radius*radius
+var area= 22/7*r;
+
+ document.getElementById("a").innerHTML =
+        "Area of circle is :"  + area;
+}
+</script>
+<br>
+<br>
+<hr>
+<p id="pr">click here to find area of rectangle.</p>
+
+<button onclick="Function()" id="hi">click here</button>
+
+<p id="b" class="man"></p>
+
+<script>
+function Function() {
+  
+var length = prompt("Enter length of rectangle");
+var breadth = prompt ("Enter breadth of rectangle.");
+
+   
+var area= length * breadth ;
+
+ document.getElementById("b").innerHTML =
+        "Area of rectangle is:"  + area;
+ 
+}
+</script>
+<br>
+<br>
+<hr>
+<p id="pr">Click here to find area of square.</p>
+
+<button onclick="myFunction()"id="hi">click here</button>
+
+<p id="c"class="man"></p>
+
+<script>
+function myFunction() {
+var length = prompt("Enter side.");
+var area= length * length;
+
+
+ document.getElementById("c").innerHTML =
+        "Area of square is:"  + area;
+       
+}
+</script>
+<br>
+<br>
+<hr>
+<p id="pr">Click here to find area of triangle .</p>
+
+<button onclick="myFunctions()" id="hi">click here</button>
+
+<p id="d" class="man"></p>
+
+<script>
+function myFunctions() {
+  
+var height = prompt("Enter height of triangle.");
+var base = prompt ("Enter base of triangle.");
+
+var area=0.5* height * base ;
+
+
+ document.getElementById("d").innerHTML =
+        "Area of triangle is:"  + area;
+
+ 
+}
+</script>
+</body>
+</html>
